@@ -8,27 +8,35 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <script type="module" src="script.js"></script>
   </head>
+
   <body>
-    <header>
-      <nav>
-        <a href="index.html"><strong>ER</strong></a>
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Cheatsheets</a></li>
-          <li><a href="">Recursos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" class="logo"><strong>ER</strong></a>
+        <ul class="nav-list">
+          <li><a href="aboutme.html" class="nav-link">About me</a></li>
+          <li><a href="#" class="nav-link">Skills</a></li>
+          <li><a href="#" class="nav-link">Cheatsheets</a></li>
+          <li><a href="#" class="nav-link">Resources</a></li>
+          <li><a href="contacto.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <h1>Contacto</h1>
-      <section>
-        <form action="" method="POST">
-          <fieldset>
+      <section class="contact-section">
+        <h1 class="contact-section-title">Contacto</h1>
+        <h2 class="contact-section-description">Rellena el formulario y me pondré en contacto contigo</h2>
+        <div class="contact-form">
+          <form action="" method="POST">
             <div>
               <label for="name">Nombre</label>
-              <input type="text" id="name" placeholder="Enzo" required />
+              <input 
+              type="text" 
+              id="name" 
+              placeholder="Enzo" 
+              name="name"
+              required />
             </div>
             <div>
               <label for="email">Email</label>
@@ -36,6 +44,7 @@
                 type="email"
                 id="email"
                 placeholder="enzo@gmail.com"
+                name="email"
                 required
               />
             </div>
@@ -45,27 +54,26 @@
                 type="text"
                 id="asunto"
                 placeholder="Asunto del mensaje"
+                name="asunto"
                 required
               />
             </div>
+              <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea                  name=""
+                  id="mensaje"
+                  cols="30"
+                  rows="10"
+                  placeholder="Escribe tu mensaje..."
+                  required
+                >
+                </textarea>
+              </div>
             <div>
-              <label for="mensaje">Mensaje</label>
-              <textarea
-                name=""
-                id="mensaje"
-                cols="30"
-                rows="10"
-                placeholder="Escribe tu mensaje..."
-                required
-              >
-              </textarea>
+              <input type="submit" id="submit" />
             </div>
-          </fieldset>
-          <div>
-            <label for="submit"></label>
-            <input type="submit" id="submit" />
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
   </body>
