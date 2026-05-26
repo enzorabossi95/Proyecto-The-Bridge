@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Cheatsheet CSS3 — Enzo Rabossi</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Cheatsheet de CSS3 por Enzo Rabossi" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="cheatsheet-layout">
+      <nav class="cheatsheet-nav">
+        <h3 class="cheatsheet-nav-title">Contenido</h3>
+        <ul>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#selectores">Selectores</a></li>
+          <li><a href="#flexbox">Flexbox</a></li>
+          <li><a href="#grid">Grid</a></li>
+          <li><a href="#responsive">Responsive</a></li>
+          <li><a href="#animaciones">Animaciones</a></li>
+        </ul>
+      </nav>
+
+      <main class="main-content">
+        <section class="cheatsheet-section" id="variables">
+          <h1 class="section-title">Cheatsheet CSS3</h1>
+          <h2 class="cheatsheet-subtitle">Variables CSS</h2>
+          <pre><code>:root {
+  --color-primary: #ff5c00;
+  --font-size-base: 16px;
+  --spacing-md: 1.5rem;
+}
+
+.elemento {
+  color: var(--color-primary);
+  font-size: var(--font-size-base);
+  padding: var(--spacing-md);
+}</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="selectores">
+          <h2 class="cheatsheet-subtitle">Selectores</h2>
+          <pre><code>/* Elemento */
+p { color: red; }
+
+/* Clase */
+.clase { color: blue; }
+
+/* ID */
+#id { color: green; }
+
+/* Descendiente */
+nav a { color: orange; }
+
+/* Hijo directo */
+ul > li { color: purple; }
+
+/* Pseudo-clase */
+a:hover { color: pink; }
+
+/* Pseudo-elemento */
+p::first-line { font-weight: bold; }
+p::after { content: ''; }</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="flexbox">
+          <h2 class="cheatsheet-subtitle">Flexbox</h2>
+          <pre><code>.contenedor {
+  display: flex;
+  flex-direction: row; /* row | column */
+  justify-content: space-between; /* flex-start | center | space-around */
+  align-items: center; /* flex-start | flex-end | stretch */
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hijo {
+  flex: 1; /* crece para llenar espacio */
+  flex: 0 0 200px; /* no crece, no encoge, 200px */
+}</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="grid">
+          <h2 class="cheatsheet-subtitle">Grid</h2>
+          <pre><code>.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 24px;
+}
+
+/* Columnas específicas */
+grid-template-columns: 200px 1fr 2fr;
+
+/* Hijo que ocupa varias columnas */
+.hijo {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="responsive">
+          <h2 class="cheatsheet-subtitle">Responsive / Media Queries</h2>
+          <pre><code>/* Mobile first */
+.elemento {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .elemento {
+    font-size: 16px;
+  }
+}
+
+/* Desktop first */
+.elemento {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .elemento {
+    font-size: 14px;
+  }
+}</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="animaciones">
+          <h2 class="cheatsheet-subtitle">Transiciones y Animaciones</h2>
+          <pre><code>/* Transición */
+.btn {
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+/* Animación */
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  14%  { transform: scale(1.1); }
+  28%  { transform: scale(1); }
+  42%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.elemento {
+  animation: heartbeat 1.5s infinite;
+}</code></pre>
+        </section>
+      </main>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Cheatsheet HTML5 — Enzo Rabossi</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Cheatsheet de HTML5 por Enzo Rabossi" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="cheatsheet-layout">
+      <nav class="cheatsheet-nav">
+        <h3 class="cheatsheet-nav-title">Contenido</h3>
+        <ul>
+          <li><a href="#estructura">Estructura</a></li>
+          <li><a href="#textos">Textos</a></li>
+          <li><a href="#listas">Listas</a></li>
+          <li><a href="#enlaces">Enlaces e Imágenes</a></li>
+          <li><a href="#formularios">Formularios</a></li>
+          <li><a href="#semantica">Semántica</a></li>
+        </ul>
+      </nav>
+
+      <main class="main-content">
+        <section class="cheatsheet-section" id="estructura">
+          <h1 class="section-title">Cheatsheet HTML5</h1>
+          <h2 class="cheatsheet-subtitle">Estructura básica</h2>
+          <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width" /&gt;
+    &lt;title&gt;Título&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- contenido --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="textos">
+          <h2 class="cheatsheet-subtitle">Textos y Tipografía</h2>
+          <pre><code>&lt;h1&gt;Título principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;h3&gt;Tercer nivel&lt;/h3&gt;
+&lt;p&gt;Párrafo de texto&lt;/p&gt;
+&lt;strong&gt;Negrita&lt;/strong&gt;
+&lt;em&gt;Cursiva&lt;/em&gt;
+&lt;span&gt;Texto inline&lt;/span&gt;
+&lt;br /&gt; &lt;!-- salto de línea --&gt;
+&lt;hr /&gt; &lt;!-- línea horizontal --&gt;</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="listas">
+          <h2 class="cheatsheet-subtitle">Listas</h2>
+          <pre><code>&lt;!-- Lista desordenada --&gt;
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Lista ordenada --&gt;
+&lt;ol&gt;
+  &lt;li&gt;Primero&lt;/li&gt;
+  &lt;li&gt;Segundo&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Lista de definición --&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Término&lt;/dt&gt;
+  &lt;dd&gt;Definición&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="enlaces">
+          <h2 class="cheatsheet-subtitle">Enlaces e Imágenes</h2>
+          <pre><code>&lt;!-- Enlace --&gt;
+&lt;a href="https://ejemplo.com"&gt;Texto&lt;/a&gt;
+&lt;a href="https://ejemplo.com" target="_blank"&gt;Nueva pestaña&lt;/a&gt;
+&lt;a href="#seccion"&gt;Ancla interna&lt;/a&gt;
+
+&lt;!-- Imagen --&gt;
+&lt;img src="imagen.jpg" alt="Descripción" /&gt;
+&lt;img src="imagen.jpg" alt="Descripción" width="300" /&gt;</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="formularios">
+          <h2 class="cheatsheet-subtitle">Formularios</h2>
+          <pre><code>&lt;form action="" method="POST"&gt;
+  &lt;label for="nombre"&gt;Nombre&lt;/label&gt;
+  &lt;input type="text" id="nombre" name="nombre" required /&gt;
+
+  &lt;label for="email"&gt;Email&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required /&gt;
+
+  &lt;label for="mensaje"&gt;Mensaje&lt;/label&gt;
+  &lt;textarea id="mensaje" name="mensaje" required&gt;&lt;/textarea&gt;
+
+  &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="semantica">
+          <h2 class="cheatsheet-subtitle">Semántica HTML5</h2>
+          <pre><code>&lt;header&gt;Cabecera&lt;/header&gt;
+&lt;nav&gt;Navegación&lt;/nav&gt;
+&lt;main&gt;Contenido principal&lt;/main&gt;
+&lt;section&gt;Sección&lt;/section&gt;
+&lt;article&gt;Artículo independiente&lt;/article&gt;
+&lt;aside&gt;Contenido lateral&lt;/aside&gt;
+&lt;footer&gt;Pie de página&lt;/footer&gt;</code></pre>
+        </section>
+      </main>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

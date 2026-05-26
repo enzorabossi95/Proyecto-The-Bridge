@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <title>Enzo Rabossi</title>
     <meta charset="UTF-8" />
@@ -8,33 +8,28 @@
       name="description"
       content="Portfolio de Enzo Rabossi: desarrollador web Full Stack"
     />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/main.js"></script>
   </head>
   <body>
-    <header class="site-header">
-      <span class="hamburger">≡</span>
-      <nav class="navbar" aria-label="Main navigation">
-        <a href="index.html" class="logo"><strong>ER</strong></a>
-        <ul class="nav-list">
-          <li><a href="aboutme.html" class="nav-link">About me</a></li>
-          <li><a href="#" class="nav-link">Skills</a></li>
-          <li><a href="#" class="nav-link">Cheatsheets</a></li>
-          <li><a href="#" class="nav-link">Resources</a></li>
-          <li><a href="contacto.html" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+
+    <div id="header"></div>
 
     <main class="main-content">
       <section class="hero-section">
-        <h1 class="hero-title">Enzo Rabossi</h1>
+        <div class="hero-text">
+          <h1 class="hero-title">Enzo Rabossi</h1>
+          <p class="hero-subtitle">Full Stack Developer</p>
+          <p class="hero-p">Desarrollador web basado en Copenhague</p>
+          <div class="hero-buttons">
+            <a href="contacto.html" class="hero-btn hero-btn-primary">Contactame</a>
+            <a href="https://github.com/enzorabossi95" class="hero-btn hero-btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
         <div class="hero-img">
-          <img
-            src="https://res.cloudinary.com/dataimagesenzo/image/upload/v1773339583/WhatsApp_Image_2026-03-12_at_19.18.39_jqfmzq.jpg"
+          <img src="https://res.cloudinary.com/dataimagesenzo/image/upload/ar_1:1,c_crop,g_south/IMG_3529_nbmmyf.jpg"
             alt="Foto de Enzo Rabossi, desarrollador web en Copenhague"
-            width="300px"
           />
         </div>
       </section>
@@ -56,25 +51,81 @@
       </section>
 
       <section class="skills-section">
-        <h2 class="section-title">Skills</h2>
+          <h2 class="section-title">Skills</h2>
+          <div id="skills-list" class="skills-list"></div>
       </section>
 
-      <section class="cheatsheets-section">
-        <h2 class="section-title">Cheatsheets</h2>
+      <section class="cheatsheets-section" id="cheatsheets-section">
+          <h2 class="section-title">Cheatsheets</h2>
+          <div id="cheatsheets-list" class="cheatsheets-list"></div>
       </section>
 
-      <section class="resources-section">
-        <h2 class="section-title">Resources</h2>
+      <section class="projects-section">
+          <h2 class="section-title">Proyectos en Progreso</h2>
+          <div class="projects-grid">
+
+            <article class="project-card">
+              <h3 class="project-title">Portfolio Personal</h3>
+              <p class="project-description">Portfolio profesional desarrollado durante el bootcamp Full Stack de The Bridge. Incluye modo oscuro, skills dinámicas, cheatsheets y sistema de recursos.</p>
+              <div class="project-tags">
+                  <span class="project-tag">HTML</span>
+                  <span class="project-tag">CSS</span>
+                  <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">Git</span>
+              </div>
+              <div class="project-buttons">
+                  <a href="#" class="project-btn project-btn-github" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+                  <a href="#" class="project-btn project-btn-demo" target="_blank" rel="noopener noreferrer">Demo en Vivo</a>
+              </div>
+          </article>
+
+          <article class="project-card">
+              <h3 class="project-title">Dashboard de Herramientas</h3>
+              <p class="project-description">Aplicación web con cuatro herramientas integradas: reloj digital, estación meteorológica, generador de contraseñas y lista de enlaces. Tema dark con acento ámbar.</p>
+              <div class="project-tags">
+                  <span class="project-tag">HTML</span>
+                  <span class="project-tag">CSS</span>
+                  <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">APIs</span>
+              </div>
+              <div class="project-buttons">
+                  <a href="https://github.com/enzorabossi95/project-break-dashboard1" class="project-btn project-btn-github" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+                  <a href="https://enzorabossi95.github.io/project-break-dashboard1/" class="project-btn project-btn-demo" target="_blank" rel="noopener noreferrer">Demo en Vivo</a>
+              </div>
+          </article>
+
+          <article class="project-card">
+              <h3 class="project-title">Clon de Fudo</h3>
+              <p class="project-description">Clon de la plataforma de gestión de restaurantes Fudo. Proyecto en desarrollo.</p>
+              <div class="project-tags">
+                  <span class="project-tag">HTML</span>
+                  <span class="project-tag">CSS</span>
+                  <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                  <a href="#" class="project-btn project-btn-github project-btn-disabled">Próximamente</a>
+              </div>
+          </article>
+
+          <article class="project-card">
+              <h3 class="project-title">Gestión de Cervecería</h3>
+              <p class="project-description">Sistema de gestión para cervecería artesanal. Proyecto en desarrollo inspirado en mi experiencia en la industria.</p>
+              <div class="project-tags">
+                  <span class="project-tag">HTML</span>
+                  <span class="project-tag">CSS</span>
+                  <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-buttons">
+                  <a href="#" class="project-btn project-btn-github project-btn-disabled">Próximamente</a>
+              </div>
+          </article>
+
+          </div>
       </section>
+
     </main>
 
-    <footer class="site-footer">
-      <p class="footer-contact">
-        <a href="contacto.html" class="footer-link">Contact</a>
-      </p>
-      <p class="footer-text">
-        © 2026 Enzo Rabossi. Todos los derechos reservados.
-      </p>
-    </footer>
+    <div id="footer"></div>
+    
   </body>
 </html>

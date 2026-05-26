@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Cheatsheet JavaScript — Enzo Rabossi</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Cheatsheet de JavaScript por Enzo Rabossi" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="cheatsheet-layout">
+      <nav class="cheatsheet-nav">
+        <h3 class="cheatsheet-nav-title">Contenido</h3>
+        <ul>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#arrays">Arrays</a></li>
+          <li><a href="#objetos">Objetos</a></li>
+          <li><a href="#funciones">Funciones</a></li>
+          <li><a href="#dom">DOM</a></li>
+          <li><a href="#modulos">Módulos</a></li>
+        </ul>
+      </nav>
+
+      <main class="main-content">
+        <section class="cheatsheet-section" id="variables">
+          <h1 class="section-title">Cheatsheet JavaScript</h1>
+          <h2 class="cheatsheet-subtitle">Variables</h2>
+          <pre><code>// const — no reasignable
+const nombre = 'Enzo';
+
+// let — reasignable
+let edad = 30;
+edad = 31;
+
+// Tipos de datos
+const texto = 'string';
+const numero = 42;
+const decimal = 3.14;
+const booleano = true;
+const nulo = null;
+const indefinido = undefined;</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="arrays">
+          <h2 class="cheatsheet-subtitle">Arrays</h2>
+          <pre><code>const frutas = ['manzana', 'pera', 'uva'];
+
+// Acceder
+frutas[0]; // 'manzana'
+
+// Métodos principales
+frutas.push('kiwi');        // agrega al final
+frutas.pop();               // elimina el último
+frutas.length;              // longitud
+
+// Iteración
+frutas.forEach(f => console.log(f));
+
+// Transformación
+const mayus = frutas.map(f => f.toUpperCase());
+
+// Filtrado
+const largas = frutas.filter(f => f.length > 4);
+
+// Búsqueda
+const encontrada = frutas.find(f => f === 'pera');</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="objetos">
+          <h2 class="cheatsheet-subtitle">Objetos</h2>
+          <pre><code>const persona = {
+  nombre: 'Enzo',
+  edad: 30,
+  ciudad: 'Copenhague'
+};
+
+// Acceder
+persona.nombre;
+persona['edad'];
+
+// Modificar
+persona.edad = 31;
+
+// Agregar propiedad
+persona.profesion = 'developer';
+
+// Desestructuración
+const { nombre, ciudad } = persona;
+
+// Spread
+const copia = { ...persona, pais: 'Dinamarca' };</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="funciones">
+          <h2 class="cheatsheet-subtitle">Funciones</h2>
+          <pre><code>// Función declarada
+function saludar(nombre) {
+  return `Hola, ${nombre}`;
+}
+
+// Función expresada
+const saludar = function(nombre) {
+  return `Hola, ${nombre}`;
+};
+
+// Arrow function
+const saludar = (nombre) => `Hola, ${nombre}`;
+
+// Con varios parámetros
+const sumar = (a, b) => a + b;
+
+// Con lógica
+const esMayor = (edad) => {
+  if (edad >= 18) return true;
+  return false;
+};</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="dom">
+          <h2 class="cheatsheet-subtitle">Manipulación del DOM</h2>
+          <pre><code>// Seleccionar elementos
+const btn = document.getElementById('mi-btn');
+const items = document.querySelectorAll('.item');
+
+// Modificar contenido
+btn.textContent = 'Nuevo texto';
+btn.innerHTML = '&lt;span&gt;HTML&lt;/span&gt;';
+
+// Modificar clases
+btn.classList.add('activo');
+btn.classList.remove('activo');
+btn.classList.toggle('activo');
+btn.classList.contains('activo');
+
+// Eventos
+btn.addEventListener('click', () => {
+  console.log('click!');
+});</code></pre>
+        </section>
+
+        <section class="cheatsheet-section" id="modulos">
+          <h2 class="cheatsheet-subtitle">Módulos ES6</h2>
+          <pre><code>// Exportar
+export const nombre = 'Enzo';
+export default function saludar() {}
+
+// Importar
+import saludar from './saludar.js';
+import { nombre } from './datos.js';
+
+// Exportar múltiples
+export { nombre, edad };
+
+// Importar todo
+import * as datos from './datos.js';</code></pre>
+        </section>
+      </main>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

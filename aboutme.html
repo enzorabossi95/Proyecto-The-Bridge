@@ -1,69 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="main.js"></script>
-</head>
-<body>
-    <header class="site-header">
-        <nav class="navbar" aria-label="Main navigation">
-            <a href="index.html" class="logo"><strong>ER</strong></a>
-            <ul class="nav-list">
-                <li><a href="aboutme.html" class="nav-link">About me</a></li>
-                <li><a href="#" class="nav-link">Skills</a></li>
-                <li><a href="#" class="nav-link">Cheatsheets</a></li>
-                <li><a href="#" class="nav-link">Resources</a></li>
-                <li><a href="contacto.html" class="nav-link">Contact</a></li>
+<html lang="es">
+    <head>
+        <title>About me — Enzo Rabossi</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="description" content="Sobre Enzo Rabossi: biografía, experiencia, educación y valores"/>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <script type="module" src="js/main.js"></script>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <main class="main-content">
+        <!-- HERO -->
+        <section class="about-hero-section">
+            <div class="about-hero-text">
+            <h1 class="about-hero-title">About me</h1>
+            <p class="about-hero-subtitle">Desarrollador web Full Stack basado en Copenhague</p>
+            </div>
+        </section>
+
+        <!-- BIOGRAFIA -->
+        <section class="biography-section">
+            <div class="biography-content">
+            <div class="biography-text">
+                <h2 class="section-title">Biografía Personal</h2>
+                <p class="section-text">
+                Hola, soy Enzo Rabossi. Nací en Argentina y hace varios años me mudé a Copenhague, Dinamarca, donde vivo actualmente con mi pareja y mi perro. Durante más de 7 años trabajé en el mundo de la cerveza: tuve una tienda de cervezas, mi propia fábrica y un bar. Ese camino me enseñó a emprender, gestionar equipos y resolver problemas reales.
+                </p>
+                <p class="section-text">
+                En paralelo, siempre me interesó la tecnología. Completé una diplomatura en Desarrollo Web Full Stack en la UTN y actualmente estoy en el bootcamp de The Bridge, donde sigo construyendo proyectos y desarrollando mis habilidades como desarrollador.
+                </p>
+            </div>
+            <div class="biography-img">
+                <img
+                src="https://res.cloudinary.com/dataimagesenzo/image/upload/v1779770926/9a147a80-1f78-48a0-a834-bfde147b3760_qkwc7g.jpg"
+                alt="Foto de Enzo Rabossi, desarrollador web en Copenhague"
+                />
+            </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section class="experience-section">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="experience-list">
+            <article class="experience-card">
+                <span class="experience-date">2026 — presente</span>
+                <div class="experience-detail">
+                <h3 class="experience-role">Estudiante Full Stack Developer</h3>
+                <p class="experience-company">The Bridge Bootcamp</p>
+                <p class="experience-description">Desarrollo de proyectos web completos con HTML, CSS y JavaScript. Trabajo con metodologías ágiles y control de versiones con Git.</p>
+                </div>
+            </article>
+
+            <article class="experience-card">
+                <span class="experience-date">2024 — 2025</span>
+                <div class="experience-detail">
+                <h3 class="experience-role">Estudiante Desarrollo Web Full Stack</h3>
+                <p class="experience-company">UTN — Universidad Tecnológica Nacional</p>
+                <p class="experience-description">Diplomatura en desarrollo web con foco en fundamentos de programación, HTML, CSS y JavaScript.</p>
+                </div>
+            </article>
+
+            <article class="experience-card">
+                <span class="experience-date">2017 — 2024</span>
+                <div class="experience-detail">
+                <h3 class="experience-role">Fundador y Operador</h3>
+                <p class="experience-company">Cervecería y Bar — Argentina / Dinamarca</p>
+                <p class="experience-description">Gestión completa de negocio propio: producción, logística, ventas y atención al cliente. Fábrica de cerveza artesanal, tienda especializada y bar.</p>
+                </div>
+            </article>
+            </div>
+        </section>
+
+        <!-- EDUCACION -->
+        <section class="education-section">
+            <h2 class="section-title">Educación</h2>
+            <div class="education-list">
+            <article class="education-card">
+                <span class="education-date">2026</span>
+                <div class="education-detail">
+                <h3 class="education-degree">Full Stack Developer + IA</h3>
+                <p class="education-institution">The Bridge Bootcamp</p>
+                </div>
+            </article>
+
+            <article class="education-card">
+                <span class="education-date">2024 — 2025</span>
+                <div class="education-detail">
+                <h3 class="education-degree">Diplomatura en Desarrollo Web Full Stack</h3>
+                <p class="education-institution">UTN — Universidad Tecnológica Nacional</p>
+                </div>
+            </article>
+            </div>
+        </section>
+
+        <!-- VALORES -->
+        <section class="values-section">
+            <h2 class="section-title">Valores Personales</h2>
+            <ul class="values-grid">
+            <li class="values-card">
+                <span class="values-icon">🔍</span>
+                <h3 class="values-title">Curiosidad</h3>
+                <p class="values-description">Siempre buscando aprender algo nuevo, dentro y fuera del código.</p>
+            </li>
+
+            <li class="values-card">
+                <span class="values-icon">🎯</span>
+                <h3 class="values-title">Constancia</h3>
+                <p class="values-description">Proyectos que se empiezan se terminan. El proceso importa tanto como el resultado.</p>
+            </li>
+
+            <li class="values-card">
+                <span class="values-icon">⚡</span>
+                <h3 class="values-title">Adaptabilidad</h3>
+                <p class="values-description">De Argentina a Dinamarca, de la cerveza al código — los cambios son oportunidades.</p>
+            </li>
+
+            <li class="values-card">
+                <span class="values-icon">✦</span>
+                <h3 class="values-title">Código limpio</h3>
+                <p class="values-description">Lo que se escribe tiene que ser legible, mantenible y con intención.</p>
+            </li>
             </ul>
-        </nav>
-    </header>
+        </section>
+        </main>
 
-    <main class="main-content">
-    <section class="hero-section">
-        <h1 class="hero-title">Enzo Rabossi</h1>
-        <p class="hero-p">Desarrollador web en formación</p>
-        <div class="hero-img">
-        <img
-            src="https://res.cloudinary.com/dataimagesenzo/image/upload/v1773339583/WhatsApp_Image_2026-03-12_at_19.18.39_jqfmzq.jpg"
-            alt="Foto de Enzo Rabossi, desarrollador web en Copenhague"
-            width="300px"
-        />
-        </div>
-    </section>
-
-    <section class="about-section">
-        <article class="about-article">
-        <h2 class="section-title">Biografía Personal</h2>
-        <p class="section-text">
-            Hola, soy Enzo Rabossi 
-        </p>
-        </article>
-    </section>
-
-    <section class="skills-section">
-        <h2 class="section-title">Experiencia Profesional</h2>
-    </section>
-
-    <section class="cheatsheets-section">
-        <h2 class="section-title">Educación</h2>
-    </section>
-
-    <section class="resources-section">
-        <h2 class="section-title">Valores Personales</h2>
-    </section>
-    </main>
-
-    <footer class="site-footer">
-    <p class="footer-contact">
-        <a href="contacto.html" class="footer-link">Contact</a>
-    </p>
-    <p class="footer-text">
-        © 2026 Enzo Rabossi. Todos los derechos reservados.
-    </p>
-    </footer>
-</body>
+        <div id="footer"></div>
+    </body>
 </html>
